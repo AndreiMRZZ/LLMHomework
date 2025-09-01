@@ -9,7 +9,7 @@ Chatbotul completeaza recomandarea cu un rezumat detaliat si ofera functionalita
 ---
 
 ## Functionalitati implementate
-1. **Baza de date cu rezumate (book_summaries)** – contine minim 10 carti  
+1. **Baza de date cu rezumate (summaries)** – contine minim 10 carti  
 2. **RAG cu ChromaDB** – cautare semantica dupa teme si contexte  
 3. **Chatbot AI** – recomandari personalizate folosind GPT si vector store  
 4. **Tool `get_summary_by_title(title)`** – intoarce rezumatul complet pentru o carte  
