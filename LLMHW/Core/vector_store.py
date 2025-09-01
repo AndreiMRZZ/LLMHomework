@@ -1,13 +1,11 @@
-# Core/vector_store.py
 from api.conf import settings
 
-# Embeddings (noua cale recomandată)
+
 try:
     from langchain_openai import OpenAIEmbeddings
 except Exception:
     from langchain.embeddings.openai import OpenAIEmbeddings  # fallback
 
-# VectorStore Chroma – pachet nou
 from langchain_chroma import Chroma
 
 from Core.loader import load_book_summaries
@@ -18,16 +16,14 @@ OPENAI_API_KEY = settings.OPENAI_API_KEY
 EMBEDDING_MODEL = settings.OPENAI_EMBEDDING_MODEL
 CHROMA_DB_DIR = settings.CHROMA_DB_DIR
 
-# -------- Embeddings --------
 embedding_function = OpenAIEmbeddings(
     model=EMBEDDING_MODEL,
     openai_api_key=OPENAI_API_KEY,
 )
 
-# -------- Încarcă rezumatele --------
 SUMMARIES_PATH = "summaries.json"
 if not Path(SUMMARIES_PATH).exists():
-    raise FileNotFoundError(f"Nu gasesc {SUMMARIES_PATH} (pune-l în radacina proiectului).")
+    raise FileNotFoundError(f"nu se gaseste")
 
 documents, ids, metadata = load_book_summaries(SUMMARIES_PATH)
 
