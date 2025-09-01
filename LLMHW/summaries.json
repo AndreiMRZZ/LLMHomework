@@ -1,0 +1,52 @@
+[
+  {
+    "title": "The Hobbit",
+    "summary": "A hobbit named Bilbo is swept into a grand adventure to reclaim a treasure guarded by a dragon. Along the way, he discovers courage, loyalty, and friendship.",
+    "themes": ["adventure", "friendship", "courage"]
+  },
+  {
+    "title": "1984",
+    "summary": "In a dystopian future, Winston Smith rebels against a totalitarian regime that monitors every aspect of life. The story explores themes of control and resistance.",
+    "themes": ["dystopia", "freedom", "control"]
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "summary": "A young boy discovers he's a wizard and enters a magical world filled with danger, mystery, and deep friendships.",
+    "themes": ["magic", "friendship", "school"]
+  },
+  {
+    "title": "All Quiet on the Western Front",
+    "summary": "A German soldier recounts the horrors of World War I, exploring the brutality and emotional toll of combat.",
+    "themes": ["war", "trauma", "loss"]
+  },
+  {
+    "title": "Pride and Prejudice",
+    "summary": "Elizabeth Bennet navigates social expectations and personal growth in this romantic tale of wit, pride, and love.",
+    "themes": ["romance", "society", "prejudice"]
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "summary": "Holden Caulfield wanders through New York City as he grapples with adolescence, alienation, and identity.",
+    "themes": ["identity", "adolescence", "alienation"]
+  },
+  {
+    "title": "The Alchemist",
+    "summary": "Santiago, a young shepherd, follows a dream across deserts and cities in search of his personal legend.",
+    "themes": ["destiny", "dreams", "journey"]
+  },
+  {
+    "title": "The Book Thief",
+    "summary": "A girl in Nazi Germany finds comfort in books and words as the world around her descends into chaos.",
+    "themes": ["war", "resilience", "books"]
+  },
+  {
+    "title": "The Little Prince",
+    "summary": "A pilot meets a strange boy from another planet, who teaches him lessons about love, loneliness, and human nature.",
+    "themes": ["philosophy", "innocence", "love"]
+  },
+  {
+    "title": "Life of Pi",
+    "summary": "After a shipwreck, a boy survives on a lifeboat with a Bengal tiger. A story of survival, faith, and the nature of truth.",
+    "themes": ["survival", "faith", "nature"]
+  }
+]

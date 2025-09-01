@@ -1,0 +1,52 @@
+<div class="container">
+  <img src="assets/endava_logo.png" alt="Endava Logo" class="logo"
+       onerror="this.src='https://via.placeholder.com/150x40?text=Logo'; this.onerror=null" />
+
+  <div class="sidebar">
+    <h2>Smart Librarian</h2>
+    <button class="new-chat" (click)="newChat()">+ New Chat</button>
+
+    <div class="chat-list">
+      <div *ngFor="let conv of conversations; let i = index"
+           class="chat-title" [class.selected]="i === selectedIndex">
+        <ng-container *ngIf="editingIndex !== i; else editTitle">
+          <span (click)="selectConversation(i)" (dblclick)="startEditingTitle(i)">
+            {{ conv.title }}
+          </span>
+          <button class="delete-button" (click)="deleteConversation(i)">🗑️</button>
+        </ng-container>
+
+        <ng-template #editTitle>
+          <input class="edit-title-input" [value]="conv.title"
+                 (blur)="finishEditingTitle(i, $event.target.value)"
+                 (keydown.enter)="finishEditingTitle(i, $event.target.value)" autofocus />
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="user">@andrei-tudor.mirza</div>
+  </div>
+
+  <div class="chat-area">
+    <div class="messages" #messagesBox>
+      <div *ngFor="let msg of history" class="message-bubble">{{ msg }}</div>
+    </div>
+
+    <div class="input-area">
+      <button class="icon-button"
+              (click)="isRecording ? stopRecording() : startRecording()"
+              [ngClass]="{ recording: isRecording }"
+              [disabled]="loading">
+        {{ isRecording ? '🛑' : '🎤' }}
+      </button>
+
+      <input type="text" placeholder="Ask something..."
+             [(ngModel)]="message" class="chat-input" [disabled]="loading" />
+
+      <button class="send-button" (click)="sendMessage()" [disabled]="loading">➤</button>
+      <button class="tts-button" (click)="playTTS()" [disabled]="loading">🔊</button>
+      <button class="recommend-button" (click)="recommendBook()" [disabled]="loading">📚</button>
+      <!-- <button class="summary-button" (click)="getSummary()" [disabled]="loading">📄</button> -->
+    </div>
+  </div>
+</div>

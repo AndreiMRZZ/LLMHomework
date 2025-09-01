@@ -1,0 +1,169 @@
+
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+  position: relative;
+}
+
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+}
+
+
+.sidebar {
+  width: 250px;
+  background-color: #192b37;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 20px 20px 0; 
+}
+
+.new-chat {
+  width: 100%;
+  background: none;
+  border: 1px solid #ff5640;
+  color: #ff5640;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.chat-title {
+  color: #ff5640;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.user {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+.chat-area {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.message-bubble {
+  background-color: #f2f2f2;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  max-width: 70%;
+}
+
+.input-area {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.send-button,
+.tts-button,
+.icon-button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.icon-button.recording {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+.chat-title.selected {
+  background-color: #ffa07a;
+  color: black;
+  font-weight: bold;
+}
+
+.chat-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  background-color: #1e3a53;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ff5640;
+}
+
+.chat-title span {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chat-title.selected {
+  background-color: #ff5640;
+  color: black;
+  font-weight: bold;
+}
+
+.delete-button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 6px;
+}
+.edit-title-input {
+  width: 100%;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.recommend-button,
+.summary-button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #6bc2ff;
+  color: white;
+  margin-left: 4px;
+}
+
+.recommend-button:hover {
+  background-color: #45a8e6;
+}
+
+.summary-button:hover {
+  background-color: #389cdd;
+}
